@@ -36,7 +36,7 @@ export default {
     return {
       url_nums: [null, null],
       url_operator: null,
-      url_equal: "/tegaki01/0024.png",
+      url_equal: "tegaki01/0024.png",
       max_num: 25,
     };
   },
@@ -49,10 +49,10 @@ export default {
         //0011 ～ 0019が出る
         let num = Math.floor( (Math.random()) * 9);  
         num += 11;
-        this.url_nums[i] = "/tegaki01/"+ String(num).padStart(4, '0') +".png";  
+        this.url_nums[i] = "tegaki01/"+ String(num).padStart(4, '0') +".png";  
       }
       //this.current = this.list[Math.floor(Math.random() * this.list.length)];
-      this.url_operator =  Math.random() > 0.5 ? "/tegaki01/0020.png" : "/tegaki01/0021.png";
+      this.url_operator =  Math.random() > 0.5 ? "tegaki01/0020.png" : "tegaki01/0021.png";
     },
   },
 };

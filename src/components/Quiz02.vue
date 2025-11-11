@@ -46,7 +46,7 @@ export default {
       nums_A: [],
       url_operator: null,
       nums_B: [],
-      url_equal: "/drill-your-char/tegaki01/0024.png",
+      url_equal: "tegaki01/0024.png",
       max_num: 25,
     };
   },
@@ -71,7 +71,7 @@ export default {
       //this.current = this.list[Math.floor(Math.random() * this.list.length)];
       // 足し算と引き算が 50:50
       this.url_operator = isPlus ? 
-        "/drill-your-char/tegaki01/0020.png" : "/drill-your-char/tegaki01/0021.png";
+        "tegaki01/0020.png" : "tegaki01/0021.png";
     },
   },
 };
@@ -81,7 +81,7 @@ function GetUrlsFromNumber(x: number): string[] {
   console.log(chars);
   const paths = chars.map((elm, index) => {
     const nth = index % 2 === 1 ? Number(elm) : Number(elm) + 10;
-    const path = "/drill-your-char/tegaki01/"+ String(nth).padStart(4, '0') +".png";  
+    const path = "tegaki01/"+ String(nth).padStart(4, '0') +".png";  
     return path;
   });
   return paths;
